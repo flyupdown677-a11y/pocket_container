@@ -1,0 +1,142 @@
+.class public final synthetic Lu53;
+.super Ljava/lang/Object;
+.source "r8-map-id-4c10e3ca9285f132209f196161a6b45c92c32e09cfec98d5db01ee026736ef53"
+
+# interfaces
+.implements Lqw;
+.implements Lvs0;
+
+
+# instance fields
+.field public final synthetic a:Ld71;
+
+
+# direct methods
+.method public constructor <init>(Ld71;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lu53;->a:Ld71;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()J
+    .locals 2
+
+    .line 1
+    iget-object p0, p0, Lu53;->a:Ld71;
+
+    .line 2
+    .line 3
+    invoke-interface {p0}, Lh41;->get()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Lmw;
+
+    .line 8
+    .line 9
+    iget-wide v0, p0, Lmw;->a:J
+
+    .line 10
+    .line 11
+    return-wide v0
+.end method
+
+.method public final b()Lis0;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lu53;->a:Ld71;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    .line 1
+    instance-of v0, p1, Lqw;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    instance-of v0, p1, Lvs0;
+
+    .line 6
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    check-cast p1, Lvs0;
+
+    .line 10
+    .line 11
+    invoke-interface {p1}, Lvs0;->b()Lis0;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    iget-object p0, p0, Lu53;->a:Ld71;
+
+    .line 16
+    .line 17
+    invoke-virtual {p0, p1}, Lea2;->equals(Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p0
+
+    .line 21
+    return p0
+
+    .line 22
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 23
+    return p0
+.end method
+
+.method public final hashCode()I
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lu53;->a:Ld71;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lea2;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.sg.linuxgo" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="28" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
+        </intent>
+    </queries>
+    <permission android:name="com.sg.linuxgo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.sg.linuxgo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:enableOnBackInvokedCallback="true" android:extractNativeLibs="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.pairip.application.Application" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher" android:supportsRtl="true" android:theme="@style/Theme.PocketLinux">
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="true" android:launchMode="singleTop" android:name="com.sg.linuxgo.MainActivity" android:resizeableActivity="true" android:supportsPictureInPicture="true" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <layout android:defaultHeight="600.0dp" android:defaultWidth="300.0dp" android:minHeight="300.0dp" android:minWidth="300.0dp"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity0" android:process=":win0" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow0" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity1" android:process=":win1" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow1" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity2" android:process=":win2" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow2" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity3" android:process=":win3" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow3" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity4" android:process=":win4" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow4" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity5" android:process=":win5" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow5" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity6" android:process=":win6" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow6" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity7" android:process=":win7" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow7" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity8" android:process=":win8" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow8" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity9" android:process=":win9" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow9" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity10" android:process=":win10" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow10" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity11" android:process=":win11" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow11" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity12" android:process=":win12" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow12" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity13" android:process=":win13" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow13" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity14" android:process=":win14" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow14" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity15" android:process=":win15" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow15" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity16" android:process=":win16" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow16" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity17" android:process=":win17" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow17" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity18" android:process=":win18" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow18" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity19" android:process=":win19" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow19" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity20" android:process=":win20" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow20" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity21" android:process=":win21" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow21" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity22" android:process=":win22" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow22" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity23" android:process=":win23" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow23" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity24" android:process=":win24" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow24" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity25" android:process=":win25" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow25" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity26" android:process=":win26" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow26" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity27" android:process=":win27" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow27" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity28" android:process=":win28" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow28" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity29" android:process=":win29" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow29" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity30" android:process=":win30" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow30" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:launchMode="singleTask" android:name="com.sg.linuxgo.GuestAppActivity31" android:process=":win31" android:resizeableActivity="true" android:taskAffinity="com.sg.linuxgo.appwindow31" android:windowSoftInputMode="adjustResize"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.sg.linuxgo.SetupForegroundService" android:stopWithTask="false"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.sg.linuxgo.DesktopDeConvertService" android:stopWithTask="false"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.sg.linuxgo.BackupRestoreService" android:stopWithTask="false"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.sg.linuxgo.softwarecenter.SoftwareCenterService" android:stopWithTask="false"/>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.SessionKeepAliveService" android:stopWithTask="false">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Keeps Linux container desktop and terminal sessions alive while PocketLinux is in the background"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.X11Service" android:process=":x11" android:stopWithTask="false">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the Linux X11 display server for container GUI sessions"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service0" android:process=":xapp0" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service1" android:process=":xapp1" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service2" android:process=":xapp2" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service3" android:process=":xapp3" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service4" android:process=":xapp4" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service5" android:process=":xapp5" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service6" android:process=":xapp6" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service7" android:process=":xapp7" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service8" android:process=":xapp8" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service9" android:process=":xapp9" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service10" android:process=":xapp10" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service11" android:process=":xapp11" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service12" android:process=":xapp12" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service13" android:process=":xapp13" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service14" android:process=":xapp14" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service15" android:process=":xapp15" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service16" android:process=":xapp16" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service17" android:process=":xapp17" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service18" android:process=":xapp18" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service19" android:process=":xapp19" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service20" android:process=":xapp20" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service21" android:process=":xapp21" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service22" android:process=":xapp22" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service23" android:process=":xapp23" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service24" android:process=":xapp24" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service25" android:process=":xapp25" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service26" android:process=":xapp26" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service27" android:process=":xapp27" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service28" android:process=":xapp28" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service29" android:process=":xapp29" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service30" android:process=":xapp30" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.sg.linuxgo.GuestAppX11Service31" android:process=":xapp31" android:stopWithTask="true">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Hosts the X11 display for one Linux app window"/>
+        </service>
+        <receiver android:exported="false" android:name="com.sg.linuxgo.SessionTerminateReceiver">
+            <intent-filter>
+                <action android:name="com.sg.linuxgo.ACTION_TERMINATE_SESSION"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density|layoutDirection|fontScale" android:exported="false" android:launchMode="singleInstance" android:name="com.sg.linuxgo.x11.MainActivity" android:resizeableActivity="true" android:supportsPictureInPicture="true" android:taskAffinity=".sgx11" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.sg.linuxgo.x11.LoriePreferences" android:resizeableActivity="true" android:supportsPictureInPicture="false" android:taskAffinity=".sgx11.preferences" android:theme="@style/Theme.AppCompat.DayNight"/>
+        <meta-data android:name="com.samsung.android.multidisplay.keep_process_alive" android:value="false"/>
+        <meta-data android:name="android.allow_multiple_resumed_activities" android:value="true"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.sg.linuxgo.x11.LoriePreferences$Receiver">
+            <intent-filter>
+                <action android:name="com.sg.linuxgo.x11.CHANGE_PREFERENCE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="9.1.0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivityV2" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <provider android:authorities="com.sg.linuxgo.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <activity android:exported="false" android:name="com.pairip.licensecheck.LicenseActivity"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+</manifest>

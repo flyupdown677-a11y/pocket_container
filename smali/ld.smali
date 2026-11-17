@@ -1,0 +1,118 @@
+.class public final enum Lld;
+.super Ljava/lang/Enum;
+.source "r8-map-id-4c10e3ca9285f132209f196161a6b45c92c32e09cfec98d5db01ee026736ef53"
+
+
+# static fields
+.field public static final enum e:Lld;
+
+.field public static final enum f:Lld;
+
+.field public static final synthetic g:[Lld;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 4
+
+    .line 1
+    new-instance v0, Lld;
+
+    .line 2
+    .line 3
+    const-string v1, "BoundReached"
+
+    .line 4
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 7
+    .line 8
+    .line 9
+    sput-object v0, Lld;->e:Lld;
+
+    .line 10
+    .line 11
+    new-instance v1, Lld;
+
+    .line 12
+    .line 13
+    const-string v2, "Finished"
+
+    .line 14
+    .line 15
+    const/4 v3, 0x1
+
+    .line 16
+    invoke-direct {v1, v2, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 17
+    .line 18
+    .line 19
+    sput-object v1, Lld;->f:Lld;
+
+    .line 20
+    .line 21
+    filled-new-array {v0, v1}, [Lld;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v0
+
+    .line 25
+    sput-object v0, Lld;->g:[Lld;
+
+    .line 26
+    .line 27
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Lld;
+    .locals 1
+
+    .line 1
+    const-class v0, Lld;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Lld;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[Lld;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lld;->g:[Lld;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [Lld;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
